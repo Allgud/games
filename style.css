@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+.top {
+  background: url("./img/background/main-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1024px;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.header__title {
+  width: 789px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  padding-top: 217px;
+  margin-bottom: 32px;
+}
+
+.header__text {
+  width: 481px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 44px;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 234px;
+  height: 48px;
+  color: inherit;
+  background-color: #9c0332;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  border-radius: 30px;
+}
+
+.games {
+  min-height: 556px;
+  background-color: #000915;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.games__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 32px;
+}
+
+.games__item {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.game {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 378px;
+  height: 300px;
+  color: inherit;
+  position: relative;
+}
+
+.game__title {
+  font-family: inherit;
+  position: absolute;
+  left: 32px;
+  bottom: 32px;
+}
+
+.games__item:first-child {
+  background-image: url("./img/background/bg-game1.jpg");
+}
+
+.games__item:nth-child(2) {
+  background-image: url("./img/background/bg-game2.jpg");
+}
+
+.games__item:last-child {
+  background-image: url("./img/background/bg-game3.jpg");
+}
+/*# sourceMappingURL=style.css.map */
