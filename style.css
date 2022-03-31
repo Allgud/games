@@ -1,3 +1,53 @@
+.play__modal {
+  min-width: 1200px;
+  min-height: 100vh;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.close-btn {
+  content: "X";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+}
+
+.modal--open {
+  display: block;
+}
+
+.modal-1__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 16px;
+}
+
+.modal-1__item img {
+  width: 575px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -153,6 +203,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .play__title {

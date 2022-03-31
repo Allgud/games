@@ -1,4 +1,5 @@
 @import "vars";
+@import "modal";
 
 * {
   margin: 0;
@@ -129,6 +130,7 @@ html {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
 
   &__title {
