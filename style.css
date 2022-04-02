@@ -1,7 +1,7 @@
 .play__modal {
   min-width: 1200px;
   min-height: 100vh;
-  background-color: white;
+  background-color: #1a355b;
   border-radius: 15px;
   overflow: hidden;
   position: absolute;
@@ -11,13 +11,12 @@
 }
 
 .close-btn {
-  content: "X";
   width: 30px;
   height: 30px;
   position: absolute;
   top: 40px;
   right: 40px;
-  color: black;
+  color: #fff;
   font-size: 24px;
   font-weight: 700;
   cursor: pointer;
@@ -29,23 +28,75 @@
   display: block;
 }
 
-.modal-1__content {
+.modal__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 16px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 16px;
+  gap: 12px;
 }
 
-.modal-1__item img {
-  width: 575px;
+.modal__text, .modal__list, .modal__output {
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 150px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.modal__input {
+  display: inline-block;
+  padding: 8px;
+  padding-left: 24px;
+  width: 80px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-bottom: 48px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.modal__input:focus, .modal__text-input:focus {
+  outline: none;
+  border: 2px solid #44d2ff;
+  -webkit-box-shadow: 0 0 5px 5px #fff;
+          box-shadow: 0 0 5px 5px #fff;
+}
+
+.modal__text-input {
+  width: 300px;
+  height: 32px;
+  margin-bottom: 24px;
+  border-radius: 15px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.modal__list {
+  padding-top: 0;
+  visibility: hidden;
+}
+
+.modal__list--visible {
+  visibility: visible;
+}
+
+.modal__output {
+  padding-top: 16px;
+  margin-bottom: 0;
 }
 
 * {
@@ -114,6 +165,10 @@ html {
   font-size: 18px;
   line-height: 22px;
   border-radius: 30px;
+}
+
+.disabled {
+  background-color: #808080;
 }
 
 .games {

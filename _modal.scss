@@ -1,7 +1,7 @@
 .play__modal {
   min-width: 1200px;
-  min-height: 100vh;
-  background-color: white;
+  min-height: 100vh; 
+  background-color: $color-darkblue-2;
   border-radius: 15px;
   overflow: hidden;
   position: absolute;
@@ -11,13 +11,12 @@
 }
 
 .close-btn {
-  content: "X";
   width: 30px;
   height: 30px;
   position: absolute;
   top: 40px;
   right: 40px;
-  color: black;
+  color: $color-white;
   font-size: 24px;
   font-weight: 700;
   cursor: pointer;
@@ -29,16 +28,66 @@
   display: block;
 }
 
-.modal-1 {
-  &__content {
+
+.modal{
+  
+  &__content{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 16px;
-    box-sizing: border-box;
-    padding: 16px;
+    gap: 12px;
   }
-  &__item img {
-    width: 575px;
+
+  &__text{
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 150px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  &__input{
+    display: inline-block;
+    padding: 8px;
+    padding-left: 24px;
+    width: 80px;
+    font-family: $basic-font;
+    font-weight: 700;
+    margin-bottom: 48px;
+    box-sizing: border-box;
+    &:focus{
+      outline: none;
+      border: 2px solid $color-lightblue;
+      box-shadow: 0 0 5px 5px $color-white;
+    }
+  }
+  &__text-input{
+    width: 300px;
+    height: 32px;
+    margin-bottom: 24px;
+    border-radius: 15px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-family: $basic-font;
+    font-weight: 600;
+    &:focus{
+      @extend .modal__input:focus;
+    }
+  }
+  &__list{
+    @extend .modal__text;
+    padding-top: 0;
+    visibility: hidden;
+    &--visible{
+      visibility: visible;
+    }
+  }
+  &__output{
+    @extend .modal__text;
+    padding-top: 16px;
+    margin-bottom: 0;
   }
 }
