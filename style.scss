@@ -1,5 +1,4 @@
 @import "vars";
-@import "modal";
 
 * {
   margin: 0;
@@ -155,13 +154,6 @@ html {
     margin: 0;
   }
 }
-
-// @media(min-width: 376px) and (max-width: 1440px){
-//   .center{
-//     padding-left: 32px;
-//     padding-right: 32px;
-//   }
-// }
 
 @media (max-width: 376px) {
   .center {
