@@ -40,6 +40,7 @@ html {
     padding-top: 217px;
     margin-bottom: 32px;
   }
+
   &__text {
     width: 481px;
     font-weight: 300;
@@ -73,6 +74,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+
   &__content {
     display: flex;
     flex-wrap: wrap;
@@ -95,6 +97,7 @@ html {
   height: 300px;
   color: inherit;
   position: relative;
+
   &__title {
     font-family: inherit;
     position: absolute;
@@ -104,6 +107,7 @@ html {
     font-size: 24px;
     line-height: 32px;
   }
+
   &:hover {
     border: 3px solid $color-lightblue;
     box-sizing: border-box;
@@ -176,6 +180,7 @@ html {
     align-items: center;
     gap: 32px;
     padding-top: 22px;
+
     &__title {
       width: 100vw;
       font-size: 32px;
@@ -196,8 +201,10 @@ html {
   .games {
     padding-top: 128px;
     padding-bottom: 128px;
+
     .game {
       width: 343px;
+
       &__title {
         left: 16px;
       }
@@ -205,6 +212,7 @@ html {
   }
 
   .play {
+    
     &__content {
       flex-direction: column;
       gap: 64px;
