@@ -65,6 +65,28 @@ const rememberWords = () => {
   }
 }
 
+const getRiddle = (num = 2) => {
+    const question = `Больше часа, меньше минуты`
+    const answer = 'секунда'
+    let tries = num 
+  
+    let userAnswer = prompt(question)
+
+    if(userAnswer.toLowerCase().trim() === answer){
+        alert('Победа!')
+        return
+    }
+
+    if(userAnswer.toLowerCase().trim() !== answer){
+        if(tries === 0){
+            alert('Попытки закончились! Ты проиграл!')
+            return
+        }
+        alert(`Неверно! Осталось ${num} попытки`)
+            getRiddle(tries - 1)
+    }
+}
+
 gameBtns.forEach(btn => {
     btn.addEventListener("click", e => {
         e.preventDefault()
@@ -78,7 +100,11 @@ gameBtns.forEach(btn => {
             case 'Запомни слова' : {
                 rememberWords()
                 break;
-            };
+            }
+            case 'Игра в загадки' : {
+                getRiddle()
+                break;
+            }
         }
     })
 })
