@@ -159,6 +159,41 @@ html {
   }
 }
 
+#game3{
+  background-image: url("./img/background/play3-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .play__content{
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .play__description{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .play__text{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.footer{
+  padding: 32px 0px;
+  text-align: center;
+  background-color: $color-darkblue;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  border-top: 1px solid rgba(184, 212, 255, 0.2);
+}
+
 @media (max-width: 376px) {
   .center {
     padding-left: 16px;
@@ -237,5 +272,9 @@ html {
     &__image svg {
       width: 100%;
     }
+  }
+
+  #game3{
+    align-items: flex-start;
   }
 }
